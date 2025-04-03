@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+h3 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2rem;
+}
+
+#calContainer {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    text-align: right;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: default;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    color: #fff;
+}
+
+.operator-btn {
+    background-color: #555;
+}
+
+.operator-btn:hover {
+    background-color: #777;
+}
+
+.operator-btn:active {
+    background-color: #999;
+    transform: scale(0.95);
+}
+
+button[value="="] {
+    background-color: #28a745;
+}
+
+button[value="="]:hover {
+    background-color: #218838;
+}
+
+button[value="c"] {
+    background-color: #dc3545;
+}
+
+button[value="c"]:hover {
+    background-color: #c82333;
+}
+
+button[value="+"] {
+    background-color: #6c757d;
+}
+
+button[value="-"] {
+    background-color: #6c757d;
+}
+
+button[value="*"] {
+    background-color: #6c757d;
+}
+
+button[value="/"] {
+    background-color: #6c757d;
+}
+
+button[value="%"] {
+    background-color: #6c757d;
+}
+
+button[value="."] {
+    background-color: #6c757d;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    transform: scale(0.95);
+}
